@@ -12,8 +12,8 @@ const price = items.forEach(function (number){
     for (number of priceAverage){
        total +=number;
     }
-    console.log(Math.round(total / 25));
-    return (total /25);
+    console.log((total / 25).toFixed(2));
+    return (total /25).toFixed(2);
     }
     
 addUpNumbers();
@@ -61,7 +61,7 @@ const numberMaterials = items.filter(function (element){
 console.log(numberMaterials);
 
 numberMaterials.forEach(function (element){
-        console.log(`${element.title} has ${element.materials.length} materials`);
+        console.log(`${element.title} has ${element.materials.length} materials: ${element.materials}`);
 })
 
 
