@@ -12,18 +12,21 @@ const price = items.forEach(function (number){
     for (number of priceAverage){
        total +=number;
     }
-    console.log((total / 25).toFixed(2));
+    total = (total /25).toFixed(2)
+    console.log(`The average price is ${total}`);
     return (total /25).toFixed(2);
     }
     
 addUpNumbers();
 
 const middle = items.filter(function (element){
-    
     return element.price >= 14 && element.price < 18;
-})
+});
+console.log('1',middle);
+// middle.forEach(function (element){
+console.log(`Items that cost between $14.00 USD and $18.00 USD:`,middle);
+// })
 
-console.log(middle);
 
 
 // const gBP = items.filter(function (element){
