@@ -1,4 +1,4 @@
-console.log('Hello');
+
 const items = [{
     "listing_id": 161489961,
     "state": "active",
