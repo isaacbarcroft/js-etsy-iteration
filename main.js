@@ -56,3 +56,12 @@ const numberMaterials = items.filter(function (element){
     return element.materials.length >= 8;
 })
 console.log(numberMaterials);
+
+
+
+
+const whoMade = items.filter(function (element){
+    return element['who_made'] === "i_did";
+})
+
+console.log(whoMade);
