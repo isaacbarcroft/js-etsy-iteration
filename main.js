@@ -4,7 +4,7 @@ let priceAverage = [];
 const price = items.forEach(function (number){
     priceAverage.push(number['price']);
     })
-    console.log(priceAverage);
+    // console.log(priceAverage);
 
 
     function addUpNumbers(){
@@ -22,7 +22,7 @@ addUpNumbers();
 const middle = items.filter(function (element){
     return element.price >= 14 && element.price < 18;
 });
-console.log('1',middle);
+
 // middle.forEach(function (element){
 console.log(`Items that cost between $14.00 USD and $18.00 USD:`,middle);
 // })
@@ -49,7 +49,7 @@ console.log(`${gBP[0].title} costs €${gBP[0].price}`);
 const woodMaterials = items.filter(function(element, index, arr){
     return element.materials.includes('wood');
 });
-console.log(woodMaterials);
+// console.log(woodMaterials);
 
 
 woodMaterials.forEach(function (element){
@@ -61,7 +61,7 @@ woodMaterials.forEach(function (element){
 const numberMaterials = items.filter(function (element){
     return element.materials.length >= 8;
 })
-console.log(numberMaterials);
+// console.log(numberMaterials);
 
 numberMaterials.forEach(function (element){
         console.log(`${element.title} has ${element.materials.length} materials: ${element.materials}`);
